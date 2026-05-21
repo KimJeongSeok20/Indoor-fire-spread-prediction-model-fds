@@ -6,9 +6,12 @@ This project uses LSTM, ConvLSTM, and TCN models to predict indoor fire spread f
 - `CO_FRACTION`
 - `SOOT_VISIBILITY`
 
-Simulation(env): [PyroSim](https://www.thunderheadeng.com/pyrosim/)
+## Simulation Data
 
-Export Simulation Data: [fds2ascii](https://github.com/firemodels/fds/tree/master/Utilities/fds2ascii)
+| Purpose | Tool |
+| --- | --- |
+| Simulation environment | [PyroSim](https://www.thunderheadeng.com/pyrosim/) |
+| Export simulation data | [fds2ascii](https://github.com/firemodels/fds/tree/master/Utilities/fds2ascii) |
 
 ## Install
 
@@ -18,8 +21,6 @@ cd Indoor-fire-spread-prediction-model-fds
 
 python -m pip install -r requirements.txt
 ```
-
-The dependency set is pinned in `requirements.txt` and was smoke-tested with Python 3.12.
 
 ## Test Models
 
