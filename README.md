@@ -1,6 +1,6 @@
 # Indoor fire spread prediction models
 
-Sensor-sequence models for predicting 2D fire-field outputs:
+This project uses LSTM, ConvLSTM, and TCN models to predict indoor fire spread from FDS sensor sequences. Each model takes 70 sensor readings over 30 time steps and outputs 2D fire-field maps for:
 
 - `TEMPERATURE`
 - `CO_FRACTION`
