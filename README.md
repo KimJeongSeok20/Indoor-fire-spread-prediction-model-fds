@@ -6,23 +6,11 @@ Sensor-sequence models for predicting 2D fire-field outputs:
 - `CO_FRACTION`
 - `SOOT_VISIBILITY`
 
-The repository contains TCN, LSTM, and ConvLSTM model code, pretrained checkpoints, and fitted scalers.
-
 ## Install
 
 ```bash
 pip install -r requirements.txt
 ```
-
-## Model Architecture
-
-### ConvLSTM
-
-![ConvLSTM model architecture](assets/CONVLSTM.png)
-
-### TCN
-
-![TCN model architecture](assets/TCN.png)
 
 ## Evaluate TCN
 
@@ -46,6 +34,16 @@ python scripts/train_convlstm.py
 ```
 
 Training scripts use `data/train_data` by default.
+
+## Model Architecture
+
+### ConvLSTM
+
+![ConvLSTM model architecture](assets/CONVLSTM.png)
+
+### TCN
+
+![TCN model architecture](assets/TCN.png)
 
 ## Demo
 
