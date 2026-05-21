@@ -1,4 +1,4 @@
-# Fire Field Prediction Models
+# Indoor fire spread prediction models
 
 Sensor-sequence models for predicting 2D fire-field outputs:
 
