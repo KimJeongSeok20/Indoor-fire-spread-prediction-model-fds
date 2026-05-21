@@ -12,17 +12,12 @@ Sensor-sequence models for predicting 2D fire-field outputs:
 pip install -r requirements.txt
 ```
 
-## Evaluate TCN
+## Evaluate Models
 
 ```bash
-python scripts/evaluate_tcn.py --dataset data/train_data --checkpoint checkpoints/TCN_base.pth
-```
-
-## Evaluate ConvLSTM
-
-```bash
-python scripts/evaluate_convlstm.py --dataset data/train_data --checkpoint checkpoints/convlstm_base.pth
+python scripts/evaluate_lstm.py --dataset data/test_data --checkpoint checkpoints/lstm2_100.pth
 python scripts/evaluate_convlstm.py --dataset data/test_data --checkpoint checkpoints/convlstm_base.pth
+python scripts/evaluate_tcn.py --dataset data/test_data --checkpoint checkpoints/TCN_base.pth
 ```
 
 ## Train
