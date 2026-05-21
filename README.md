@@ -35,14 +35,14 @@ scalers/
   soot_scaler.pkl
   devc_scaler.pkl
 data/
-  train_data/           # Local full training CSV cases; ignored by git
+  train_data/           # Full training CSV dataset
   test_data/            # Publishable model-ready test cases and FDS inputs
   psm/                  # Centralized PyroSim PSM source files
   raw/                  # Local ZIP/PSM/source files; ignored by git
 outputs/                # Generated checkpoints and plots
 ```
 
-Large raw simulation folders are intentionally excluded by `.gitignore`.
+Large raw/generated simulation folders are intentionally excluded by `.gitignore`.
 
 ## Install
 
@@ -54,7 +54,7 @@ Install the PyTorch build that matches your CUDA environment if GPU training is 
 
 ## Data Format
 
-The local training dataset has been normalized into 50 model-ready cases:
+The training dataset has been normalized into 50 model-ready CSV cases:
 
 ```text
 data/train_data/
@@ -127,4 +127,4 @@ python scripts/train_lstm.py
 python scripts/train_convlstm.py
 ```
 
-Training scripts currently use `data/train_data` by default.
+Training scripts use `data/train_data` by default.

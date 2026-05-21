@@ -3,7 +3,7 @@
 Datasets are split into local training data and publishable test data.
 
 ```text
-data/train_data/                         # Local 50-case training CSV dataset; ignored by git
+data/train_data/                         # 50-case training CSV dataset
 data/test_data/fire_surface_test/inputs/ # Publishable FDS inputs and referenced textures
 data/test_data/fire_surface_test/model_ready/
                                         # Publishable test_3MW/test_6MW/test_8MW CSV cases
@@ -13,7 +13,7 @@ data/raw/                               # Local raw archives and generated simul
 data/sample/                            # Legacy local leftovers; ignored
 ```
 
-`data/train_data` currently contains 50 cases and uses the format expected by `src.data.dataset.myDataset`: each case folder contains one `{case}_devc.csv` file and 150 `slice_*.csv` files.
+`data/train_data` contains 50 cases and uses the format expected by `src.data.dataset.myDataset`: each case folder contains one `{case}_devc.csv` file and 150 `slice_*.csv` files.
 
 `data/test_data/fire_surface_test/model_ready` uses the same loader format with three cases named `test_3MW`, `test_6MW`, and `test_8MW`.
 
