@@ -14,41 +14,17 @@ pip install -r requirements.txt
 
 ## Test Models
 
-### LSTM
-
 ```bash
 python scripts/evaluate_lstm.py --dataset data/test_data --checkpoint checkpoints/lstm2_100.pth
-```
-
-### CONVLSTM
-
-```bash
 python scripts/evaluate_convlstm.py --dataset data/test_data --checkpoint checkpoints/convlstm_base.pth
-```
-
-### TCN
-
-```bash
 python scripts/evaluate_tcn.py --dataset data/test_data --checkpoint checkpoints/TCN_base.pth
 ```
 
 ## Train
 
-### LSTM
-
 ```bash
 python scripts/train_lstm.py
-```
-
-### CONVLSTM
-
-```bash
 python scripts/train_convlstm.py
-```
-
-### TCN
-
-```bash
 python scripts/train_tcn.py
 ```
 
