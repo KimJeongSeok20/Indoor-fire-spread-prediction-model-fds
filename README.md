@@ -36,3 +36,7 @@ python scripts/train_convlstm.py
 ```
 
 Training scripts use `data/train_data` by default.
+
+## Demo
+
+[Watch 70-second demo video](demo/fire_prediction_demo_70s.mp4)
