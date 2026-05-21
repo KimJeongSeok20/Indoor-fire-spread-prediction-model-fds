@@ -12,20 +12,20 @@ Sensor-sequence models for predicting 2D fire-field outputs:
 pip install -r requirements.txt
 ```
 
-## Evaluate Models
+## Test Models
 
 ```bash
-python scripts/evaluate_lstm.py --dataset data/test_data --checkpoint checkpoints/lstm2_100.pth
-python scripts/evaluate_convlstm.py --dataset data/test_data --checkpoint checkpoints/convlstm_base.pth
-python scripts/evaluate_tcn.py --dataset data/test_data --checkpoint checkpoints/TCN_base.pth
+LSTM python scripts/evaluate_lstm.py --dataset data/test_data --checkpoint checkpoints/lstm2_100.pth
+ConvLSTM python scripts/evaluate_convlstm.py --dataset data/test_data --checkpoint checkpoints/convlstm_base.pth
+TCN python scripts/evaluate_tcn.py --dataset data/test_data --checkpoint checkpoints/TCN_base.pth
 ```
 
 ## Train
 
 ```bash
-python scripts/train_tcn.py
-python scripts/train_lstm.py
-python scripts/train_convlstm.py
+LSTM python scripts/train_lstm.py
+ConvLSTM python scripts/train_convlstm.py
+TCN python scripts/train_tcn.py
 ```
 
 Training scripts use `data/train_data` by default.
