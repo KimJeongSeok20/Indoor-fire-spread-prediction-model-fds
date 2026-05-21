@@ -1,20 +1,20 @@
-# Indoor fire spread prediction models
+# 실내 화재 확산 예측 모델
 
 [English](README.md) | [한국어](README.ko.md)
 
-This project uses LSTM, ConvLSTM, and TCN models to predict indoor fire spread from FDS sensor sequences. Each model takes 70 sensor readings over 30 time steps and outputs 2D fire-field maps for:
+이 프로젝트는 FDS 센서 시퀀스로부터 실내 화재 확산을 예측하기 위해 LSTM, ConvLSTM, TCN 모델을 사용합니다. 각 모델은 30개 시간 단계의 70개 센서 값을 입력으로 받아 다음 2D 화재 필드 맵을 출력합니다:
 
 - `TEMPERATURE`
 - `CO_FRACTION`
 - `SOOT_VISIBILITY`
 
-## Install
+## 설치
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Test Models
+## 모델 테스트
 
 ```bash
 python scripts/evaluate_lstm.py --dataset data/test_data --checkpoint checkpoints/lstm2_100.pth
@@ -22,7 +22,7 @@ python scripts/evaluate_convlstm.py --dataset data/test_data --checkpoint checkp
 python scripts/evaluate_tcn.py --dataset data/test_data --checkpoint checkpoints/TCN_base.pth
 ```
 
-## Train
+## 학습
 
 ```bash
 python scripts/train_lstm.py
@@ -30,9 +30,9 @@ python scripts/train_convlstm.py
 python scripts/train_tcn.py
 ```
 
-Training scripts use `data/train_data` by default.
+학습 스크립트는 기본적으로 `data/train_data`를 사용합니다.
 
-## Model Architecture
+## 모델 구조
 
 ### ConvLSTM
 
@@ -42,9 +42,9 @@ Training scripts use `data/train_data` by default.
 
 ![TCN model architecture](assets/TCN.png)
 
-## Demo
+## 데모
 
-### Simulation
+### 시뮬레이션
 
 https://github.com/user-attachments/assets/9708a141-80a6-41dc-9e02-68a5c68625e1
 
@@ -52,7 +52,7 @@ https://github.com/user-attachments/assets/9708a141-80a6-41dc-9e02-68a5c68625e1
 
 https://github.com/user-attachments/assets/b169ea25-0705-43b0-92bb-e8676e41ae6b
 
-| Model | Temperature R2 | Temperature RMSE | CO R2 | CO RMSE | FPS |
+| 모델 | Temperature R2 | Temperature RMSE | CO R2 | CO RMSE | FPS |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | LSTM | 0.8581 | 79.0945 | 0.7897 | 0.003452 | 433.82 |
 | ConvLSTM | 0.8654 | 77.0301 | 0.8169 | 0.003221 | 28.93 |
@@ -62,7 +62,7 @@ https://github.com/user-attachments/assets/b169ea25-0705-43b0-92bb-e8676e41ae6b
 
 https://github.com/user-attachments/assets/65307168-75de-43e7-b072-cbe44cf06e4f
 
-| Model | Temperature R2 | Temperature RMSE | CO R2 | CO RMSE | FPS |
+| 모델 | Temperature R2 | Temperature RMSE | CO R2 | CO RMSE | FPS |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | LSTM | 0.7267 | 104.6139 | 0.8020 | 0.003829 | 533.16 |
 | ConvLSTM | 0.7452 | 101.0027 | 0.8003 | 0.003845 | 33.43 |
@@ -72,7 +72,7 @@ https://github.com/user-attachments/assets/65307168-75de-43e7-b072-cbe44cf06e4f
 
 https://github.com/user-attachments/assets/21f5b9a2-238f-403a-a8e0-f89450e2d2db
 
-| Model | Temperature R2 | Temperature RMSE | CO R2 | CO RMSE | FPS |
+| 모델 | Temperature R2 | Temperature RMSE | CO R2 | CO RMSE | FPS |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | LSTM | 0.6306 | 127.2756 | 0.7324 | 0.004359 | 532.74 |
 | ConvLSTM | 0.7641 | 101.7143 | 0.7510 | 0.004204 | 34.10 |
