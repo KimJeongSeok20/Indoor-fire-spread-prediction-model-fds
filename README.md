@@ -39,4 +39,4 @@ Training scripts use `data/train_data` by default.
 
 ## Demo
 
-https://github.com/user-attachments/assets/bf31b549-4c7c-45ef-8e6d-6df75753ed6d
+https://github.com/user-attachments/assets/9708a141-80a6-41dc-9e02-68a5c68625e1
