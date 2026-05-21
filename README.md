@@ -18,11 +18,11 @@ pip install -r requirements.txt
 
 ### ConvLSTM
 
-![ConvLSTM model architecture](assets/convlstm_architecture.png)
+![ConvLSTM model architecture](assets/CONVLSTM.png)
 
 ### TCN
 
-![TCN model architecture](assets/tcn_architecture.png)
+![TCN model architecture](assets/TCN.png)
 
 ## Evaluate TCN
 
