@@ -1,0 +1,12 @@
+* text=auto
+
+*.csv text eol=lf
+*.fds text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.txt text eol=lf
+
+*.jpg binary
+*.pkl binary
+*.psm binary
+*.pth binary

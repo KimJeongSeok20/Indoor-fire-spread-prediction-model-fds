@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local tooling
+.omx/
+
+# Large local/raw data
+A-Z5MW/
+a_j/
+a_j_7MW/
+a_j_9MW/
+data/train_data/
+data/raw/
+data/sample/
+*.psm
+!data/psm/**/*.psm
+*.ps~
+*.sf
+*.s3d
+*.s3dd
+*.smv
+*.smvv
+*.sz
+*.tcframes
+*.out
+*.ini
+*.pyrogeom
+*.pyrofloors
+*.views
+*.bnd
+*.zip
+
+# Generated training artifacts
+outputs/*
+!outputs/.gitkeep
+TCN_checkpoints/
+TCN_final_checkpoints/
+ConvLSTM_checkpoints/
+lstm_checkpoints/
+*.png
+*.log
+
+# OS/editor
+.DS_Store
+Thumbs.db

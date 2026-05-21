@@ -1,0 +1,4 @@
+input_case,model_case,psm_path,mw,hrrpua,width_m,depth_m,area_m2,xb,note
+fst_3MW,test_3MW,data/psm/test_data/fst_3MW.psm,3,3000.0,3.0,4.0,12.0,"22.75,25.75,12.25,16.25,0.1,0.5","center-left interior range, away from original left-edge fires"
+fst_6MW,test_6MW,data/psm/test_data/fst_6MW.psm,6,6000.0,5.0,3.5,17.5,"40.5,45.5,30.5,34.0,0.1,0.5","central interior range shifted to avoid existing i_1MW fire overlap"
+fst_8MW,test_8MW,data/psm/test_data/fst_8MW.psm,8,8000.0,6.0,4.0,24.0,"51.25,57.25,39.25,43.25,0.1,0.5","right-upper interior range, away from original left-edge fires"
