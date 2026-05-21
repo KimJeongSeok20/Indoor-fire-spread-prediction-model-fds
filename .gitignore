@@ -43,6 +43,8 @@ TCN_final_checkpoints/
 ConvLSTM_checkpoints/
 lstm_checkpoints/
 *.png
+!assets/*.png
+!assets/**/*.png
 *.log
 
 # OS/editor

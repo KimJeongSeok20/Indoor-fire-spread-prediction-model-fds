@@ -14,6 +14,16 @@ The repository contains TCN, LSTM, and ConvLSTM model code, pretrained checkpoin
 pip install -r requirements.txt
 ```
 
+## Model Architecture
+
+### ConvLSTM
+
+![ConvLSTM model architecture](assets/convlstm_architecture.png)
+
+### TCN
+
+![TCN model architecture](assets/tcn_architecture.png)
+
 ## Evaluate TCN
 
 ```bash
