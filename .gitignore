@@ -36,6 +36,7 @@ data/sample/
 *.zip
 
 # Generated training artifacts
+demo/
 outputs/*
 !outputs/.gitkeep
 TCN_checkpoints/
