@@ -11,8 +11,18 @@ This project uses LSTM, ConvLSTM, and TCN models to predict indoor fire spread f
 ## Install
 
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/KimJeongSeok20/Indoor-fire-spread-prediction-model-fds.git
+cd Indoor-fire-spread-prediction-model-fds
+
+python -m venv .venv
+# Windows: .venv\Scripts\activate
+# macOS/Linux: source .venv/bin/activate
+
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
 ```
+
+The dependency set is pinned in `requirements.txt` and was smoke-tested with Python 3.12.
 
 ## Test Models
 

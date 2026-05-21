@@ -11,8 +11,18 @@
 ## 설치
 
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/KimJeongSeok20/Indoor-fire-spread-prediction-model-fds.git
+cd Indoor-fire-spread-prediction-model-fds
+
+python -m venv .venv
+# Windows: .venv\Scripts\activate
+# macOS/Linux: source .venv/bin/activate
+
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
 ```
+
+의존성 버전은 `requirements.txt`에 고정되어 있으며 Python 3.12 환경에서 smoke test했습니다.
 
 ## 모델 테스트
 
