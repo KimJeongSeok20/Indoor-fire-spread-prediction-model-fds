@@ -6,13 +6,6 @@ This project uses LSTM, ConvLSTM, and TCN models to predict indoor fire spread f
 - `CO_FRACTION`
 - `SOOT_VISIBILITY`
 
-## Simulation Data
-
-| Purpose | Tool |
-| --- | --- |
-| Simulation environment | [PyroSim](https://www.thunderheadeng.com/pyrosim/) |
-| Export simulation data | [fds2ascii](https://github.com/firemodels/fds/tree/master/Utilities/fds2ascii) |
-
 ## Install
 
 ```bash
@@ -85,3 +78,10 @@ https://github.com/user-attachments/assets/21f5b9a2-238f-403a-a8e0-f89450e2d2db
 | LSTM | 0.6306 | 127.2756 | 0.7324 | 0.004359 | 532.74 |
 | ConvLSTM | 0.7641 | 101.7143 | 0.7510 | 0.004204 | 34.10 |
 | TCN | 0.7683 | 100.7950 | 0.7771 | 0.003978 | 42.10 |
+
+## Simulation Data
+
+| Purpose | Tool |
+| --- | --- |
+| Simulation environment | [PyroSim](https://www.thunderheadeng.com/pyrosim/) |
+| Export simulation data | [fds2ascii](https://github.com/firemodels/fds/tree/master/Utilities/fds2ascii) |
