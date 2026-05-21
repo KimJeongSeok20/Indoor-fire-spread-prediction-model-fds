@@ -1,12 +1,14 @@
 # Indoor fire spread prediction models
 
-[English](README.md) | [한국어](README.ko.md)
-
 This project uses LSTM, ConvLSTM, and TCN models to predict indoor fire spread from FDS sensor sequences. Each model takes 70 sensor readings over 30 time steps and outputs 2D fire-field maps for:
 
 - `TEMPERATURE`
 - `CO_FRACTION`
 - `SOOT_VISIBILITY`
+
+Simulation(env): [PyroSim](https://www.thunderheadeng.com/pyrosim/)
+
+Export Simulation Data: [fds2ascii](https://github.com/firemodels/fds/tree/master/Utilities/fds2ascii)
 
 ## Install
 
