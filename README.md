@@ -36,7 +36,7 @@ scalers/
   devc_scaler.pkl
 data/
   train_data/           # Full training CSV dataset
-  test_data/            # Publishable model-ready test cases and FDS inputs
+  test_data/            # Publishable model-ready test cases
   psm/                  # Centralized PyroSim PSM source files
   raw/                  # Local ZIP/PSM/source files; ignored by git
 outputs/                # Generated checkpoints and plots
@@ -71,7 +71,7 @@ Each model-ready dataset case should be a folder containing:
 Example:
 
 ```text
-data/test_data/fire_surface_test/model_ready/
+data/test_data/
   test_3MW/
     test_3MW_devc.csv
     slice_0_1.csv
@@ -83,15 +83,10 @@ data/test_data/fire_surface_test/model_ready/
 The publishable fire-surface test set is:
 
 ```text
-data/test_data/fire_surface_test/
-  inputs/
-    fst_3MW/
-    fst_6MW/
-    fst_8MW/
-  model_ready/
-    test_3MW/
-    test_6MW/
-    test_8MW/
+data/test_data/
+  test_3MW/
+  test_6MW/
+  test_8MW/
 ```
 
 PyroSim `.psm` source files are kept separately from CSV model data:
@@ -116,7 +111,7 @@ python scripts/evaluate_tcn.py --dataset data/train_data --checkpoint checkpoint
 
 ```bash
 python scripts/evaluate_convlstm.py --dataset data/train_data --checkpoint checkpoints/convlstm_base.pth
-python scripts/evaluate_convlstm.py --dataset data/test_data/fire_surface_test/model_ready --checkpoint checkpoints/convlstm_base.pth
+python scripts/evaluate_convlstm.py --dataset data/test_data --checkpoint checkpoints/convlstm_base.pth
 ```
 
 ## Train
