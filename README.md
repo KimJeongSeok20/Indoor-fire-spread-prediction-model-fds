@@ -47,6 +47,10 @@ Training scripts use `data/train_data` by default.
 
 ## Demo
 
+### Simulation
+
+https://github.com/user-attachments/assets/9708a141-80a6-41dc-9e02-68a5c68625e1
+
 ### test_3MW
 
 https://github.com/user-attachments/assets/b169ea25-0705-43b0-92bb-e8676e41ae6b
