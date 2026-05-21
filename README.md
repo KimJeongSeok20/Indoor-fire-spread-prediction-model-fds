@@ -36,7 +36,3 @@ python scripts/train_convlstm.py
 ```
 
 Training scripts use `data/train_data` by default.
-
-## Paper
-
-Paper link and citation will be added here.
